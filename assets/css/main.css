@@ -1,0 +1,117 @@
+
+#wrapper{
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+h1{
+    color: gray;
+    font-size: 32px;
+    text-transform: capitalize;
+    padding: 10px 0px;
+    margin: 10px 0px;
+}
+/* ---------------------- */
+#wp-slider{
+    width: 350px;
+}
+
+#show{
+    width: 350px;
+    height: 350px;
+    border: 1px solid #33333321;
+    overflow: hidden;
+    position: relative;
+}
+
+#show img{
+    width: 100%;
+    height: auto;
+}
+
+#show .next_left{
+    position: absolute;
+    top: 150px;
+    left: 0;
+    font-size: 60px;
+    color:#f44336b8;
+    cursor: pointer;
+}
+
+#show .next_right{
+    position: absolute;
+    top: 150px;
+    right: 0;
+    font-size: 60px;
+    color: #f44336b8;
+    cursor: pointer;
+}
+
+/* ---------------------- */
+#wp-list-thumb{
+    margin-top: 30px;
+}
+
+#wp-list-thumb ul#list-thumb {
+    display: flex;
+}
+
+ul#list-thumb li{
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+  
+}
+
+ul#list-thumb li a img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+ul#list-thumb li:last-child{
+    margin-right: 0;
+}
+
+ul#list-thumb li.active{
+    border: 1px solid red;
+}
+
+/* ---------------------- */
+
+#wp-content{
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+}
+
+#content{
+    position: relative;
+    width: 550px;
+    height: 460px;
+    overflow-x: scroll;
+    text-align: justify;
+    padding: 20px 60px 20px 10px;
+}
+
+#content #scroll-btn-top{
+    display: none;
+    position: absolute;
+    position: fixed;
+    bottom: 130px;
+    right: 225px;
+    border: none;
+    outline: none;
+    background-color: #fff;
+    cursor: pointer;
+    opacity: 0.8;
+  }
+  
+  #content #scroll-btn-top i{
+    font-size: 40px;
+    color: red;
+}
+
+  #content #scroll-btn-top i:hover {
+    color: rgb(20, 185, 128);
+  }

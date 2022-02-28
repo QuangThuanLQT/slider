@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tạo slider sản phẩm cơ bản bằng jquery</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/fontawesome/css/all.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <script src="assets/js/jquery-3.5.1.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <h1>Basic slider product</h1>
+        <div id="wp-content">
+            <div id="wp-slider">
+                <div id="show">
+                    <div class="next_left"><i class="fas fa-chevron-circle-left"></i></div>
+                    <div class="next_right"><i class="fas fa-chevron-circle-right"></i></div>
+                    <img src="assets/images/thumb_1.png" alt="thumb_1">
+                </div>
+                <!-- End show -->
+                <div id="wp-list-thumb">
+                    <ul id="list-thumb">
+                        <li><a href="#"><img src="assets/images/thumb_1.png" alt="thumb_1"></a></li>
+                        <li><a href="#"><img src="assets/images/thumb_2.png" alt="thumb_2"></a></li>
+                        <li><a href="#"><img src="assets/images/thumb_3.png" alt="thumb_3"></a></li>
+                        <li><a href="#"><img src="assets/images/thumb_4.png" alt="thumb_4"></a></li>
+                    </ul>
+                </div>
+                <!-- End wp-list-thumb -->
+            </div>
+            <!-- End wp-slider -->
+            <div id="content">
+                <button id="scroll-btn-top" title="Go to top"><i class="fas fa-chevron-circle-up"></i></button>
+                <h2 style="padding: 10px 0px; text-align: center;">Câu chuyện về Doreamon</h2>
+                <p>
+                    Doraemon. Chắc hẳn ai trong chúng ta cũng đều ít nhất một lần nghe đến cái tên này. Với nhiều người,
+                    cái tên này có khi đã quá quen thuộc, đã trở thành người bạn tri âm tri kỷ trong suốt thời ấu thơ.
+                    Phải, đúng vậy. Doraemon - đứa con tinh thần của tác giả Fujiko.F.Fujio, cái tên mà bất cứ đứa trẻ
+                    nào đều biết đến, bộ truyện tranh đã đi vào lịch sử truyện tranh của Nhật và cả thế giới, đã có lúc
+                    trở thành hiện tượng. Doraemon, dù sở trường của tôi là những bộ Shounen đình đám như One Piece,
+                    Naruto hay những bộ hành động kinh điển như Attack on Titan, thì vẫn không thể không quan tâm đến,
+                    vẫn không thể bỏ qua dù chỉ một trang truyện.
+
+                    Tôi đến với Doraemon từ khi còn rất nhỏ, có lẽ chỉ là đứa trẻ con lớp một, lớp hai. Đó chính là cuốn
+                    truyện tranh đầu tiên mà tôi đọc. Vì thế mà Doraemon chính là sự khởi đầu của niềm yêu thích Manga
+                    trong tôi.
+                    Và từ đó đến nay, cứ mỗi lần nhìn thấy cuốn truyện này, là tôi lại cầm nó lên và thích thú đọc từng
+                    câu, nuốt từng hình ảnh trong đó. Niềm thích thú này, có lẽ sẽ chẳng bao giờ biến mất. Với Doraemon,
+                    thật ra hình vẽ thì chẳng có gì nổi bật, không cầu kì, lung linh như những bộ Shoujo, cũng không
+                    được mạnh mẽ như những bộ Shounen tôi từng đọc. Nhưng, có một ma lực nào đó khiến tôi cứ đọc mãi,
+                    đọc mãi và không cách nào dứt ra được.
+                    Tôi say mê với những khung hình đơn giản mà ngộ nghĩnh, với những câu nói của những đứa trẻ con thơ
+                    ngây mà trong sáng - những nhân vật bất hủ tạo nên một Doraemon huyền thoại.
+                    Doraemon (Đôrêmon), chú mèo máy vạn năng của thế kỉ 22, với thân hình thể thao lí tưởng : cao 129cm,
+                    nặng 129kg, số đo vòng một, hai, ba lần lượt là 129cm, 129cm và 129cm - tròn trịa đến đáng kinh
+                    ngạc, có sở thích là ăn bánh rán và động vật đáng sợ nhất là chuột (!)
+                    Một ngày nó, Doraemon vượt thời gian bất ngờ xuất hiện trong hộc bàn của Nobita - một học sinh tiểu
+                    học sống ở thế kỉ 20
+                    Nhiệm vụ của Doraemon là phải giúp đỡ cho cậu bé Nobita (Nôbita) ngốc nghếc, hậu đậu thoát khỏi
+                    những sự cố bất ngờ xảy đến trong cuộc sống. Bảo bối của Mèo Ú chính là những phát minh
+                    khoa học đến từ tương lai được cất trong chiếc túi thần kì 3D không đáy, cũng là một
+                    sảm phẩm từ tương lai.
+                    Doraemon sống cùng với gia đình Nobita, phòng ngủ của Mèo Ú là ngăn tủ của cậu bé Nobita. Và hằng
+                    ngày, Mèo Ú luôn phải vật lộn với đống rắc rối đầu rẫy của cậu bé ngốc nghếc, từ
+                    việc ăn, ngủ, học, chơi, đến việc bị bạn bè trêu chọc và những ước mơ trong một phút
+                    bốc đồng của cậu bé.
+                    Xuyên suốt bộ truyện còn có rất nhiều những bạn nhỏ dễ thương khác như cô bé Shizuka
+                    (Xuka) ngoan ngoãn, xinh đẹp, giỏi giang, được tất cả bạn bè và đương nhiên là cả Nobita,
+                    Doraemon quý mến; công tử nhà giàu Suneo (Xêkô) khoái khoe khoang, tự sướng; “khỉ đột”
+                    Jaian (Chaien) luôn ước mơ trở thành ca sĩ nổi tiếng dù giọng hát dở ẹc; hay cậu bé
+                    hoàn hảo Dekisugi (Đêkhi) luôn được bạn bè ngưỡng mộ; cô em gái Jaian là Jaiko với bút
+                    danh Goda Christina luôn mơ ước được trở thành mộ họa sĩ truyện tranh dù chẳng có chút
+                    năng khiếu nào.
+                </p>
+            </div>
+            <!-- End content -->
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>

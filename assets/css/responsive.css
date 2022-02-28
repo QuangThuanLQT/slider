@@ -1,0 +1,38 @@
+/* Tablet & MObile */
+@media (max-width: 63.9375em) {
+  h1 {
+    text-align: center;
+  }
+  #content {
+    display: none;
+  }
+  #wp-slider {
+    margin: 0 auto;
+  }
+  #show {
+    width: 350px;
+    height: 350px;
+    margin: 0 auto;
+  }
+}
+
+/* Mobile */
+@media (max-width: 46.1875em) {
+  h1 {
+    text-align: center;
+  }
+  #content {
+    display: none;
+  }
+  #show {
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+  }
+
+  #wp-list-thumb {
+    padding-top: 30px;
+    width: 300px;
+    margin: 0 auto;
+  }
+}
